@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-areas:
+                "header"
+                "main"
+                "aside"
+                "footer";
+            grid-template-rows: auto 1fr auto auto;
+        }
+        header {
+            grid-area: header;
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            grid-area: main;
+            padding: 20px;
+        }
+        aside {
+            grid-area: aside;
+            background-color: #e4e4e4;
+            padding: 10px;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site Simples</h1>
+        <nav>
+            <a href="#">Início</a> | 
+            <a href="#">Sobre</a> | 
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Bem-vindo ao Meu Site
